@@ -22,7 +22,7 @@ let s:colors = {
       \ "menu_grey": get(s:overrides, "menu_grey", { "gui": "#3E4452", "cterm": "237", "cterm16": "7" }),
       \ "special_grey": get(s:overrides, "special_grey", { "gui": "#3B4048", "cterm": "238", "cterm16": "7" }),
       \ "vertsplit": get(s:overrides, "vertsplit", { "gui": "#3E4452", "cterm": "59", "cterm16": "7" }),
-      \ "color_column": { "gui": "#FF0000", "cterm": "204", "cterm16": "1" },
+      \ "color_column": get(s:overrides, "color_column", { "gui": "#FF0000", "cterm": "204", "cterm16": "1" }),
       \}
 
 function! onedark#GetColors()
